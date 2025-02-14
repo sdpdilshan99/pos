@@ -1,4 +1,7 @@
 package com.pos.dao.custom;
 
-public interface CustomerDao {
+import com.pos.dao.CrudDao;
+import com.pos.entity.Customer;
+
+public interface CustomerDao extends CrudDao<Customer, String> {
 }
