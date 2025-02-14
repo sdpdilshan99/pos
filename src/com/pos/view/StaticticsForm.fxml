@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context1" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pos.controller.StaticticsFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="30.0" prefWidth="306.0" style="-fx-background-color: linear-gradient(to bottom right, #e17055, #fab1a0);" text="Statictics" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-6.0" layoutY="46.0" opacity="0.0" prefHeight="3.0" prefWidth="306.0" />
+      <Label alignment="CENTER" layoutX="285.0" layoutY="25.0" prefHeight="30.0" prefWidth="42.0" rotate="-52.8" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutY="12.0" opacity="0.0" prefHeight="0.0" prefWidth="306.0" />
+      <Button layoutX="577.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToHomeOnAction" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #e17055;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker layoutX="14.0" layoutY="58.0" prefHeight="26.0" prefWidth="201.0" promptText="Pick by Date" style="-fx-background-color: linear-gradient(to bottom right, #e17055, #fab1a0);" />
+      <Label alignment="CENTER" layoutX="211.0" layoutY="64.0" prefHeight="30.0" prefWidth="150.0" text="Monthly Income">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AreaChart layoutX="14.0" layoutY="96.0" prefHeight="394.0" prefWidth="450.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <Button layoutX="470.0" layoutY="112.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Sales by products" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="152.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Compare income by month" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="192.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Top cutomers" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="232.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Best selling products" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="272.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Peak sales hours" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="312.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Total discounts" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="352.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Stock levels" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="392.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Revenue by customers" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="432.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="170.0" style="-fx-background-color: #e17055;" text="Sales trends" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="context" maxHeight="500.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pos.controller.SignupFormController">
+   <children>
+      <AnchorPane layoutX="375.0" maxHeight="500.0" prefHeight="500.0" prefWidth="450.0">
+         <children>
+            <TextField fx:id="txtL_name" layoutX="233.0" layoutY="150.0" prefHeight="28.0" prefWidth="120.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="107.0" layoutY="190.0" prefHeight="28.0" prefWidth="245.0" promptText="Enter Email" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="107.0" layoutY="270.0" prefHeight="28.0" prefWidth="245.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIconView fill="#e17055" glyphName="ENVELOPE" layoutX="71.0" layoutY="213.0" size="17" text="" />
+            <FontAwesomeIconView fill="#e17055" glyphName="KEY" layoutX="72.0" layoutY="294.0" size="17" text="" />
+            <Button layoutX="173.0" layoutY="324.0" mnemonicParsing="false" onAction="#signUpOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #e17055;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <FontAwesomeIconView fill="#fab1a0" glyphName="GROUP" layoutX="183.0" layoutY="97.0" size="60" text="" />
+            <Text fill="#e17055" layoutX="138.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Text>
+            <Separator layoutX="21.0" layoutY="385.0" prefHeight="0.0" prefWidth="182.0" />
+            <Separator layoutX="230.0" layoutY="385.0" prefHeight="1.0" prefWidth="182.0" />
+            <Label layoutX="210.0" layoutY="377.0" text="OR" textFill="#ff5e42">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="133.0" layoutY="429.0" onAction="#openLoginFormOnAction" text="Already have an Account ?" textFill="#e17055" underline="true" />
+            <TextField fx:id="txtF_name" layoutX="107.0" layoutY="150.0" prefHeight="28.0" prefWidth="120.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#e17055" glyphName="USER" layoutX="72.0" layoutY="173.0" size="17" />
+            <TextField fx:id="txtContact_no" layoutX="107.0" layoutY="230.0" prefHeight="28.0" prefWidth="245.0" promptText="Contact Number" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#e17055" glyphName="PHONE" layoutX="73.0" layoutY="254.0" size="17" />
+         </children>
+      </AnchorPane>
+      <TextField layoutX="122.0" layoutY="187.0" prefHeight="28.0" prefWidth="245.0" promptText="Enter Email" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="122.0" layoutY="241.0" prefHeight="28.0" prefWidth="245.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: #fab1a0; -fx-border-width: 0 0 1px 0;">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </PasswordField>
+      <FontAwesomeIconView fill="#e17055" glyphName="ENVELOPE" layoutX="75.0" layoutY="208.0" size="17" />
+      <FontAwesomeIconView fill="#e17055" glyphName="KEY" layoutX="75.0" layoutY="263.0" size="17" text="" />
+      <Button layoutX="174.0" layoutY="324.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #fab1a0;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Button>
+      <Hyperlink alignment="CENTER" layoutX="226.0" layoutY="270.0" prefHeight="26.0" prefWidth="173.0" text="Forgot Your Password?" textFill="#e17055" underline="true">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Hyperlink>
+      <FontAwesomeIconView fill="#fab1a0" glyphName="GROUP" layoutX="187.0" layoutY="97.0" size="60" text="" />
+      <Text fill="#e17055" layoutX="166.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Text>
+      <Separator layoutX="25.0" layoutY="385.0" prefHeight="0.0" prefWidth="182.0" />
+      <Label layoutX="214.0" layoutY="377.0" text="OR" textFill="#ff5e42">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="137.0" layoutY="429.0" text="Dont't you have an Account ?" textFill="#e17055" underline="true" />
+      <AnchorPane layoutX="4.0" maxHeight="500.0" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #fab1a0;">
+         <children>
+            <ImageView fitHeight="526.0" fitWidth="400.0" layoutX="-29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/12.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ff5b37" layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome..">
+               <font>
+                  <Font name="Calibri Bold" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="526.0" fitWidth="400.0" layoutX="-25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/12.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff5b37" layoutX="18.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome..">
+         <font>
+            <Font name="Calibri Bold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
